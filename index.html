@@ -91,25 +91,29 @@ footer .links a{transition:.2s}footer .links a:hover{color:var(--a)}
 /* ===== EDIT YOUR CONTENT HERE ===== */
 const D={
  name:"Nandhana C Reghu",
- roles:["Data Science Intern","Generative AI Learner","Software Developer"],
+ roles:["Data Science Intern","AI/ML Engineer","Generative AI Learner","Software Developer"],
  tagline:"Software professional with experience in ERP, SQL and testing, building skills in Machine Learning and Generative AI.",
  photo:"photo.png",
- about:"Software professional with experience in ERP applications, SQL, and manual testing, and a strong foundation in Python, Java, Django, OOP and DBMS. I'm currently a Data Science Intern building skills in Machine Learning and Generative AI. I enjoy understanding client requirements, contributing to software improvements, and learning new technologies quickly.",
- stats:[["15","ERP client sites"],["8.73","MCA CGPA"],["2","Papers presented"],["3","Projects"]],
+ about:"Data Science Intern with an Integrated MCA degree and hands-on experience in Python, SQL, data analysis, Machine Learning, and Generative AI. Built an AI-powered SQL Insight Agent and gained professional experience as a Software Support Engineer, delivering ERP implementations across 15 sites, SQL operations, and client support. Skilled in data preprocessing, visualization, and translating business requirements into practical, data-driven AI solutions. I enjoy understanding client requirements, contributing to software improvements, and learning new technologies quickly.",
+ stats:[["15","ERP client sites"],["8.73","MCA CGPA"],["2","Papers presented"],["5","Projects"]],
  skills:{
   "Programming":["Python","SQL","Java"],
   "Web Development":["HTML","CSS","JavaScript","Django","Git"],
   "Data Science & ML":["NumPy","Pandas","Matplotlib","OpenCV","Web Scraping","Data Preprocessing","Data Visualization"],
   "Database":["MySQL","SQLite"],
+  "Generative AI": ["ChatGPT", "Generative AI Fundamentals", "LLM-Based Applications"],
   "Tools & Testing":["Selenium & Cucumber","Manual Testing","Figma"],
-  "ERP & Support":["ERP Implementation","Crystal Reports","Troubleshooting","Backup & Restore"]},
+  "ERP & Support":["ERP Implementation","Crystal Reports","Troubleshooting","Backup & Restore","Workflow Automation"]},
  exp:[
   {t:"Data Science Intern",o:"SMEC Technologies, Kochi",d:"June 2026 – Present",p:["Worked on data collection, preprocessing, analysis and visualization.","Performed web scraping to collect and prepare data from online sources.","Applied Python, Pandas, NumPy and Matplotlib for data processing.","Presented project findings; collaborating on a real-world solution."]},
   {t:"Junior Software Support Engineer",o:"Ferax Technologies Pvt. Ltd.",d:"Feb 2025 – July 2025",p:["Took part in ERP implementation for 15 client sites: configuring, customizing and deploying.","Resolved 5 software-related issues per week.","Wrote SQL queries for extraction, updates and validation; handled backup and restore.","Manual testing of new features and updates; clear client communication."]},
   {t:"Internships",o:"iDTech Technologies · Techmindz (NDimensionz)",d:"2022 – 2023",p:["Advanced Python with AI, iDTech Technologies, Kochi (June 2022, 8 days).","Python with Django, Techmindz, Infopark, Kochi (June 2023, 15 days)."]}],
+ /* Paste each GitHub repo URL into link:"" . If link is empty, the GitHub button is hidden automatically. */
  projects:[
-  {t:"SplashPaintZone",tech:"Web · Image Processing",p:["Automobile painting workshop management website with image-processing for service assessment.","Workflow automation for staff time tracking, add-on estimation and real-time client updates."],link:"https://github.com/nandhanac/Nandhana-C-Reghu-2024-MAINPROJECT.git"},
-  {t:"Car Damage Detection",tech:"Detectron2 · Mask R-CNN",p:["Computer vision system detecting damaged areas in vehicle images, comparing Detectron2 and Mask R-CNN.","Paper presented at NCECA 2024 and ICTAC 2024, Amal Jyothi College of Engineering."],link:"https://github.com/nandhanac/Paper-Presentation.git"},
+  {t:"AI-Powered SQL Insight Agent",tech:"Python · MySQL · LLM · Generative AI",p:["AI assistant that converts natural-language questions into SQL queries for database analysis using an LLM.","Integrated MySQL to run the AI-generated queries and retrieve data.","Generates meaningful insights from query results, simplifying SQL-based analysis.","Interactive interface showing query results, insights and visualizations."],link:""/* PASTE GITHUB LINK HERE */},
+  {t:"AI GitHub Repository Analyzer",tech:"Python · TF-IDF · Logistic Regression",p:["Application that automatically classifies GitHub repositories into Data Science, Machine Learning, Backend and Frontend.","Uses TF-IDF features with Logistic Regression to predict repository categories.","Interactive dashboard showing predicted categories, classification probabilities and repository statistics."],link:""/* PASTE GITHUB LINK HERE */},
+  {t:"SplashPaintZone",tech:"Web · Image Processing",p:["Automobile painting workshop management website with image-processing for service assessment.","Workflow automation for staff time tracking, add-on estimation and real-time client updates."],link:"https://github.com/nandhanac/SPLASHPAINTZONE.git"},
+  {t:"Car Damage Detection",tech:"Detectron2 · Mask R-CNN",p:["Computer vision system detecting damaged areas in vehicle images, comparing Detectron2 and Mask R-CNN.","Paper presented at NCECA 2024 and ICTAC 2024, Amal Jyothi College of Engineering."],link:"https://github.com/nandhanac/Car-Damage-Detection.git"},
   {t:"URL Shortener",tech:"Django · SQLite · JS",p:["Application that generates custom short links and redirects to the original URLs."],link:"https://github.com/nandhanac/URL-SHORTNER.git"}],
  edu:{t:"Integrated Master of Computer Application",o:"Amal Jyothi College of Engineering, Kanjirappally, Kottayam (APJ Abdul Kalam Technological University)",d:"2019 – 2024 · CGPA 8.73"},
  certs:["Career Essentials in Generative AI – Microsoft & LinkedIn (2026)","AWS Academy Cloud Foundation (2021)","Oracle Cloud Infrastructure (2023)","Programming in Java – NPTEL, 71% (2023)","Google Cloud Technical Series (2023)"],
@@ -123,7 +127,7 @@ home:`<div class="wrap hero"><div class="rv"><p class="hl" style="font-weight:60
 about:`<div class="wrap"><h2 class="rv">About <span>Me</span></h2><p class="sub rv" style="--i:1;max-width:760px">${D.about}</p><div class="stats">${R(D.stats,(s,i)=>`<div class="card rv" style="--i:${i+2}"><b class="hl">${s[0]}</b>${s[1]}</div>`)}</div></div>`,
 skills:`<div class="wrap"><h2 class="rv">Technical <span>Skills</span></h2><p class="sub rv" style="--i:1">Tools and technologies I work with</p><div class="grid">${R(Object.entries(D.skills),([k,v],i)=>`<div class="card rv" style="--i:${i+2}"><h3>${k}</h3>${R(v,c=>`<span class="chip">${c}</span>`)}</div>`)}</div></div>`,
 experience:`<div class="wrap"><h2 class="rv"><span>Experience</span></h2><p class="sub rv" style="--i:1">Where I've worked and learned</p><div class="tl">${R(D.exp,(e,i)=>`<div class="card rv" style="--i:${i+2}"><h3>${e.t}</h3><div class="meta">${e.o} · ${e.d}</div>${ul(e.p)}</div>`)}</div></div>`,
-projects:`<div class="wrap"><h2 class="rv">My <span>Projects</span></h2><p class="sub rv" style="--i:1">Things I've built</p><div class="grid">${R(D.projects,(p,i)=>`<div class="card rv" style="--i:${i+2}"><h3>${p.t}</h3><div class="meta">${p.tech}</div>${ul(p.p)}<p style="margin-top:12px"><a class="hl" href="${p.link}" target="_blank" rel="noopener">GitHub →</a></p></div>`)}</div></div>`,
+projects:`<div class="wrap"><h2 class="rv">My <span>Projects</span></h2><p class="sub rv" style="--i:1">Things I've built</p><div class="grid">${R(D.projects,(p,i)=>`<div class="card rv" style="--i:${i+2}"><h3>${p.t}</h3><div class="meta">${p.tech}</div>${ul(p.p)}${p.link?`<p style="margin-top:12px"><a class="hl" href="${p.link}" target="_blank" rel="noopener">GitHub →</a></p>`:""}</div>`)}</div></div>`,
 education:`<div class="wrap"><h2 class="rv"><span>Education</span> & Certifications</h2><p class="sub rv" style="--i:1">Academic background and credentials</p><div class="card rv" style="--i:2"><h3>${D.edu.t}</h3><div class="meta">${D.edu.d}</div><p style="color:var(--mu)">${D.edu.o}</p></div><div class="card rv" style="--i:3;margin-top:16px"><h3>Certifications</h3>${ul(D.certs)}</div></div>`,
 contact:`<div class="wrap contact"><h2 class="rv">Get In <span>Touch</span></h2><p class="sub rv" style="--i:1">Open to Data Science, Gen AI and Software Development roles</p><div class="grid">${R(D.contact,(c,i)=>`<a class="card rv" style="--i:${i+2}" href="${c[3]}" target="_blank" rel="noopener"><div style="font-size:1.6rem">${c[0]}</div><h3>${c[1]}</h3><p style="color:var(--mu);word-break:break-all">${c[2]}</p></a>`)}</div></div>`
 };
